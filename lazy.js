@@ -86,3 +86,53 @@ lazyVideos.forEach(video => videoObserver.observe(video));
     const whatsappNumber = "923208748438";
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   });
+
+
+
+
+
+
+
+
+
+
+
+  // Testimonials 
+
+const rcrFeedbackImages = [
+  { img: "./images/feedback/testi-2.jpeg" },
+  { img: "./images/feedback/testi-3.jpeg" },
+  { img: "./images/feedback/testi-4.jpeg" },
+  { img: "./images/feedback/testi-5.jpeg" },
+  { img: "./images/feedback/testi-6.jpeg" },
+  { img: "./images/feedback/testi-7.jpeg" },
+  { img: "./images/feedback/testi-8.jpeg" },
+  { img: "./images/feedback/testi-9.jpeg" },
+  { img: "./images/feedback/testi-10.jpeg" },
+  { img: "./images/feedback/testi-11.jpeg" },
+  { img: "./images/feedback/testi-12.jpeg" },
+  { img: "./images/feedback/testi-13.jpeg" },
+  { img: "./images/feedback/testi-14.jpeg" },
+  { img: "./images/feedback/testi-15.jpeg" }
+];
+
+const rcrFeedbackImage = document.getElementById("rcr-feedback-image");
+
+let rcrCurrentIndex = 0;
+
+// Set first image
+rcrFeedbackImage.src = rcrFeedbackImages[0].img;
+
+function rcrChangeFeedbackImage() {
+  rcrCurrentIndex = (rcrCurrentIndex + 1) % rcrFeedbackImages.length;
+
+  // Optional fade effect
+  rcrFeedbackImage.style.opacity = "0";
+
+  setTimeout(() => {
+    rcrFeedbackImage.src = rcrFeedbackImages[rcrCurrentIndex].img;
+    rcrFeedbackImage.style.opacity = "1";
+  }, 250);
+}
+
+setInterval(rcrChangeFeedbackImage, 2500);
