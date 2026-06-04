@@ -46,4 +46,4 @@ For empowerment, transformation, and better health.
 ## Dont Be Confuse
 lazy.js --- for the "lazy loading" & Program modal
 index.js --- Universal
-program.css --- included "program secrions" & "testimonials"
+program.css --- included "program sections" & "testimonials"
