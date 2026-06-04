@@ -73,47 +73,6 @@ square();
 
 
 
-//  ========Course Data ============
-//  ========Course Data ============
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  ========Course Data ============
-//  ========Course Data ============
-
-
-
-
-
-
 
 
 // Faqs Section starts here
@@ -136,49 +95,7 @@ faqItems.forEach(item => {
 
 
 
-
-
-// const imageData = [
-//   { img: "./images/feedback/testi-2.jpeg" },
-//   { img: "./images/feedback/testi-3.jpeg" },
-//   { img: "./images/feedback/testi-4.jpeg" },
-//   { img: "./images/feedback/testi-5.jpeg" },
-//   { img: "./images/feedback/testi-6.jpeg" },
-//   { img: "./images/feedback/testi-7.jpeg" },
-//   { img: "./images/feedback/testi-8.jpeg" },
-//   { img: "./images/feedback/testi-9.jpeg" },
-//   { img: "./images/feedback/testi-10.jpeg" },
-//   { img: "./images/feedback/testi-11.jpeg" },
-//   { img: "./images/feedback/testi-12.jpeg" },
-//   { img: "./images/feedback/testi-13.jpeg" },
-//   { img: "./images/feedback/testi-14.jpeg" },
-//   { img: "./images/feedback/testi-15.jpeg" }
-// ];
-
-// // Duplicate for smooth infinite scroll
-// const row1Data = [...imageData, ...imageData];
-// const row2Data = [...imageData, ...imageData];
-
-// const row1 = document.getElementById("row1");
-// const row2 = document.getElementById("row2");
-
-// // ROW 1 (Left direction)
-// row1Data.forEach(item => {
-//   row1.innerHTML += `
-//     <div class="testimonial-card">
-//       <img src="${item.img}" class="testimonial-img" alt="testimonial">
-//     </div>
-//   `;
-// });
-
-// // ROW 2 (same content)
-// row2Data.forEach(item => {
-//   row2.innerHTML += `
-//     <div class="testimonial-card">
-//       <img src="${item.img}" class="testimonial-img" alt="testimonial">
-//     </div>
-//   `;
-// });
+ 
 
 
 // ------------------------------------------------
@@ -204,10 +121,12 @@ lazyImages.forEach(img => imageObserver.observe(img));
 
 
 
-// ct Form Section
+// ========== Contact Form Section Start ==========
+// ========== Contact Form Section Start ==========
+
 const form = document.getElementById("yogaFormm");
 
-// 🔥 Your WhatsApp number (with country code, no + or spaces)
+//  Your WhatsApp number (with country code, no + or spaces)
 const whatsappNumber = "923208748438";
 
 form.addEventListener("submit", function (e) {
@@ -237,10 +156,8 @@ Message: ${message || "N/A"}`;
   
 });
 
-
-
-// lazy loading
- 
+// ========== Contact Form Section End ==========
+// ========== Contact Form Section End ==========
 
 
 
@@ -294,11 +211,9 @@ orderModal.addEventListener("click", (e) => {
    FORM SUBMIT
 ====================================== */
 
-const orderForm =
-document.getElementById("orderForm");
+const orderForm = document.getElementById("orderForm");
 
-const successMessage =
-document.getElementById("orderSuccessMessage");
+const successMessage = document.getElementById("orderSuccessMessage");
 
 orderForm.addEventListener("submit", async (e) => {
 
