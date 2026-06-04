@@ -11,31 +11,36 @@
   <title>Fit with Khansa</title>
 
   <!-- META DESCRIPTION -->
-  <meta name="description" 
-    content="Join Fit with Khansa for online Yoga, Face Yoga, and wellness programs. Improve flexibility, reduce stress, and enhance natural glow through guided daily sessions.">
+<meta name="description"
+content="Fit with Khansa helps you achieve sustainable weight loss through personalized nutrition plans, lifestyle coaching, hormonal balance support, and healthy habit transformation. Start your wellness journey today.">
 
-  <!-- KEYWORDS (optional but still helpful) -->
-  <meta name="keywords"
-    content="body weight loose, Fit with Khansa, best online weight loss program, natural weight loss, sustainable lifestyle change, personalized nutrition coaching, pakistan">
+<meta name="geo.region" content="PK">
+<meta name="geo.placename" content="Pakistan">
+<meta name="language" content="English">
+<meta name="robots" content="index, follow">
 
-  <!-- AUTHOR -->
-  <meta name="author" content="Fit with Khansa">
+<!-- KEYWORDS -->
+<meta name="keywords"
+content="Fit with Khansa, weight loss program Pakistan, online diet coach, nutrition coaching, healthy lifestyle, hormonal balance, fat loss, sustainable weight loss, wellness coaching, healthy eating plan">
 
-  <!-- CANONICAL (prevents duplicate content issues) -->
-  <link rel="canonical" href="https://your-domain.com/">
+<!-- AUTHOR -->
+<meta name="author" content="Fit with Khansa">
 
-  <!-- OPEN GRAPH (Facebook, Instagram, LinkedIn preview) -->
-  <meta property="og:title" content="Fit with Khansa | Diet & Lifestyle Coaching">
-  <meta property="og:description" content="Daily Yoga & Face Yoga sessions to heal, strengthen, and glow naturally. Join the journey of balance and wellness.">
-  <meta property="og:image" content="https://your-domain.com/images/og-image.jpg">
-  <meta property="og:url" content="https://your-domain.com/">
-  <meta property="og:type" content="website">
+<!-- CANONICAL -->
+<link rel="canonical" href="https://fitwithkhansa.com/">
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fit with Khansa | Diet & Lifestyle Coaching">
-  <meta name="twitter:description" content="Calm your mind, nourish your skin, and strengthen your body with guided online sessions.">
-  <meta name="twitter:image" content="https://your-domain.com/images/og-image.jpg">
+<!-- OPEN GRAPH -->
+<meta property="og:title" content="Fit with Khansa | Weight Loss & Lifestyle Coaching">
+<meta property="og:description" content="Transform your health with personalized weight loss guidance, nutrition coaching, and sustainable lifestyle changes. Join Fit with Khansa today.">
+<meta property="og:image" content="https://fitwithkhansa.com/images/og-image.jpg">
+<meta property="og:url" content="https://fitwithkhansa.com/">
+<meta property="og:type" content="website">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fit with Khansa | Weight Loss & Lifestyle Coaching">
+<meta name="twitter:description" content="Personalized nutrition plans, weight loss support, hormonal balance guidance, and sustainable lifestyle transformation.">
+<meta name="twitter:image" content="https://fitwithkhansa.com/images/og-image.jpg">
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
@@ -45,6 +50,7 @@
   <link rel="stylesheet" href="root.css">
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="formspree.css">
+  <link rel="stylesheet" href="program.css">
 
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -106,9 +112,9 @@
                 <li>Faqs</li>
             </a>
 
-            <a href="#get-a-quote">
+            <a href="#enquire-now">
                 <button class="primary-btn li-btn">
-                    Get A Quote
+                    Enquire Now
                 </button>
             </a>
 
@@ -145,12 +151,12 @@
             <div class="play-icon-wrapper">
               <img class="play-icon" src="./images/icons/play.png" alt="play_icon" height="20px" loading="eager">
             </div> 
-            <span class="play-icon-text">Watch Video</span>
+            <span class="play-icon-text">Watch Video <small style="text-decoration: underline; text-decoration-thickness: 1px;">(coming soon)</small></span>
             <div class="video-container">
             </div>
           </div>
         </div>
-        <video class="video-ctrl lazy-video-top" src="./images/videos/yoga-video-1.mp4" controls></video>
+        <video class="video-ctrl lazy-video-top" src="./" controls></video>
       <!-- <iframe 
           class="video-ctrl" 
           src="https://www.youtube.com/embed/18dlwB6KvW0?si=lQX334GVMW2UESxr&autoplay=1"
@@ -284,165 +290,215 @@
         </section>
 
 
-            <div class="progrm-father-container">
-              <section class="programs-section primary-container" id="our-program">
+            <!-- PROGRAM SECTION / SERVICES SECTION STARTS HEREEE-->
+            <!-- PROGRAM SECTION / SERVICES SECTION STARTS HEREEE-->
 
-                  <!-- HEADINGS -->
-                  <p class="programs-small-heading">Services</p>
-                  <h2 class="programs-main-title"> Fat-to-Fit Plans</h2>
-                  <p class="programs-desc">
-                    Our personalized programs are designed to help you build strength, improve body shape, and develop healthier habits. 
-                    Through mindful guidance and sustainable nutrition practices, they support both your physical transformation and mental well-being, 
-                    helping you create a deeper connection with your health journey.
-                  </p>
 
-                  <!-- PROGRAM CARDS WRAPPER -->
-                  <div class="programs-wrapper swiper mySwiper">
-                      <div class="swiper-wrapper" id="programCards">
-                        <!-- Card Inserted Dynamically -->
-                      </div>
+
+
+
+
+
+                  <div class="fitplan-modal-overlay" id="fitplanModal">
+                    <div class="fitplan-modal-box">
+                      <button class="fitplan-modal-close" id="fitplanModalClose">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+
+                      <h3>Start Your Fitness Journey</h3>
+                      <p>Fill your details and send enquiry on WhatsApp.</p>
+
+                      <form class="fitplan-enquiry-form" id="fitplanEnquiryForm">
+                        <input type="text" id="fitplanName" placeholder="Full Name" required>
+                        <input type="number" id="fitplanAge" placeholder="Age" required>
+
+                        <select id="fitplanGender" required>
+                          <option value="">Select Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+
+                        <textarea id="fitplanAddress" placeholder="Address" required></textarea>
+                        <input type="tel" id="fitplanMobile" placeholder="Mobile Number" required>
+
+                        <button type="submit" class="primary-btn fitplan-submit-btn">
+                          Send on WhatsApp
+                        </button>
+                      </form>
+                    </div>
                   </div>
 
-                  <div class="swiper-pagination"></div>
-            </section>
-            </div>
-
-               <!-- Yoga Instructor Ends here  -->
 
 
 
+                  <!-- Font Awesome CDN -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+                  <section class="fitplan-premium-section" id="our-program">
+                    <div class="primary-container">
 
-            <!-- Get Data From User by FORMSPREE -->
-            <!-- Get Data From User by FORMSPREE -->
-
-
-            <section class="form-spree-parent">
-              <form id="yogaForm"
-              action="https://formspree.io/f/xrbwpjbp"
-              class="fs-form fs-layout__2-column"
-              method="POST"
-              >
-              <div class="modal-close">&times;</div>
-
-              <div class="form-header">
-                <h1 class="form-header-title"> Reserve Your Spot Now</h1>
-              </div>
-
-
-                    <div class="fs-field">
-                      <label class="fs-label" for="name">Full Name</label>
-                      <input class="fs-input" id="name" name="name" required />
-                    </div>
-                    <div class="fs-field">
-                      <label class="fs-label" for="email">Email</label>
-                      <input class="fs-input" id="email" name="Email" required />
-                    </div>
-                    <div class="fs-field">
-                      <label class="fs-label" for="phone-number">Phone Number</label>
-                      <input
-                        class="fs-input"
-                        id="phone-number"
-                        name="Phone-Number"
-                        placeholder="(XXX) XXX-XXXX"
-                      />
-                    </div>
-                    <div class="fs-field">
-                      <label class="fs-label" for="gender">Gender</label>
-                      <input class="fs-input" id="gender" name="Gender" required />
-                    </div>
-                    <!-- <div class="fs-field">
-                      <label class="fs-label" for="Department">Department</label>
-                      <input class="fs-input" id="Department" name="Department" required />
-                    </div> -->
-                    <div class="fs-field">
-                      <label class="fs-label" for="course-enroll">Courses You Want To Go With</label>
-                      <select class="fs-select" id="course-enroll" name="Course-Enroll-With" required>
-                        <option value="Hatha Yoga Basics / Power Yoga">Hatha Yoga Basics/Power Yoga</option>
-                        <option value="Vinyasa Flow">Vinyasa Flow</option>
-                        <option value="Face Yoga Session">Face Yoga Session</option>
-                        <option value="Personal Coaching">Personal Coaching (customized as per your choice)</option>
-                      </select>
-                    </div>
-                    <!-- <div class="fs-field">
-                      <label class="fs-label" for="description">
-                        Description of the requested media
-                      </label>
-                      <textarea
-                        class="fs-textarea"
-                        id="description"
-                        name="description"
-                        required
-                      ></textarea>
-                    </div> -->
-                    <div class="fs-field">
-                      <label class="fs-label" for="date">Any Specific Date You Want To Start</label>
-                      <input class="fs-input" id="date" name="Any Specific Date You Want To Start" placeholder="MM-DD-YYYY" />
-                    </div>
-                    <div class="fs-field">
-                      <label class="fs-label">What Are Your Goals For Face Yoga</label>
-                      <div class="fs-radio-group">
-                        <div class="fs-radio-field">
-                          <div class="fs-radio-wrapper">
-                            <input
-                              class="fs-radio"
-                              id="delivery-method-email-Relaxation"
-                              name="What are your goals for face yoga"
-                              required
-                              type="radio"
-                              value="Relaxation"
-                            />
-                          </div>
-                          <div>
-                            <label class="fs-label" for="delivery-method-email-Relaxation">
-                              Relaxation
-                            </label>
-                          </div>
-                        </div>
-                        <div class="fs-radio-field">
-                          <div class="fs-radio-wrapper">
-                            <input
-                              class="fs-radio"
-                              id="delivery-method-Anti-aging"
-                              name="What are your goals for face yoga"
-                              required
-                              type="radio"
-                              value="Anti-aging"
-                            />
-                          </div>
-                          <div>
-                            <label class="fs-label" for="delivery-method-Anti-aging">Anti-Aging</label>
-                          </div>
-                        </div>
-                        <div class="fs-radio-field">
-                          <div class="fs-radio-wrapper">
-                            <input
-                              class="fs-radio"
-                              id="delivery-method-physical-Skin-health"
-                              name="What are your goals for face yoga"
-                              required
-                              type="radio"
-                              value="Skin health"
-                            />
-                          </div>
-                          <div>
-                            <label class="fs-label" for="delivery-method-physical-Skin-health">
-                              Skin Health
-                            </label>
-                          </div>
-                        </div>
+                      <div class="fitplan-header">
+                        <span class="small-heading">Services</span>
+                        <h2 class="primary-heading">Premium Fitness & Nutrition Plan</h2>
+                        <p class="text-style">
+                          Advanced coaching for complete transformation with customized diet,
+                          lifestyle optimization, and continuous support throughout your journey.
+                        </p>
+                        <div class="fitplan-badge">All-in-One Transformation Plan</div>
                       </div>
+
+                      <div class="fitplan-card">
+
+                        <div class="fitplan-grid">
+
+                          <!-- Left Column -->
+                          <div class="fitplan-column">
+                            <div class="fitplan-feature">
+                              <div class="fitplan-title-row">
+                                <i class="fa-solid fa-utensils"></i>
+                                <h3>Diet & Nutrition</h3>
+                              </div>
+                              <ul>
+                                <li>Advanced diet customization</li>
+                                <li>Personalized meal planning</li>
+                                <li>Diet corrections & updates</li>
+                                <li>Weekly progress analysis</li>
+                                <li>Easy home-based nutrition structure</li>
+                                <li>No crash diets — only healthy approach</li>
+                              </ul>
+                            </div>
+
+                            <div class="fitplan-feature">
+                              <div class="fitplan-title-row">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <h3>Fitness & Body Transformation</h3>
+                              </div>
+                              <ul>
+                                <li>Body recomposition focus</li>
+                                <li>Fat loss & body shaping strategy</li>
+                                <li>Sustainable results approach</li>
+                                <li>Complete transformation program</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Center Column -->
+                          <div class="fitplan-column fitplan-center-column">
+                            <img 
+                              src="./images/1o1-img.png" 
+                              alt="Online fitness coaching session" 
+                              class="fitplan-main-image"
+                            >
+
+                            <div class="fitplan-feature">
+                              <div class="fitplan-title-row">
+                                <i class="fa-solid fa-headset"></i>
+                                <h3>Coaching & Support</h3>
+                              </div>
+                              <ul>
+                                <li>1-on-1 WhatsApp coaching</li>
+                                <li>Daily/weekly check-ins</li>
+                                <li>Motivation & accountability support</li>
+                                <li>Quick response guidance</li>
+                                <li>Guidance & support throughout your journey</li>
+                                <li>24/7 WhatsApp assistance</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Right Column -->
+                          <div class="fitplan-column">
+                            <div class="fitplan-feature">
+                              <div class="fitplan-title-row">
+                                <i class="fa-solid fa-spa"></i>
+                                <h3>Lifestyle & Mindset</h3>
+                              </div>
+                              <ul>
+                                <li>Lifestyle correction support</li>
+                                <li>Healthy habit building</li>
+                                <li>Mindset & lifestyle coaching</li>
+                                <li>Sustainable lifestyle transformation</li>
+                                <li>High accountability coaching</li>
+                              </ul>
+                            </div>
+
+                            <div class="fitplan-feature">
+                              <div class="fitplan-title-row">
+                                <i class="fa-regular fa-clock"></i>
+                                <h3>Timing & Duration</h3>
+                              </div>
+
+                              <div class="fitplan-info-row">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <p><strong>Duration:</strong> 90 Days Program</p>
+                              </div>
+
+                              <div class="fitplan-info-row">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p><strong>Difficulty Level:</strong> Intermediate to Advanced</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="fitplan-footer">
+                          <div class="fitplan-mini-box">
+                            <i class="fa-solid fa-shield-heart"></i>
+                            <div>
+                              <h4>Complete Guidance</h4>
+                              <p>Full guidance and support throughout your journey</p>
+                            </div>
+                          </div>
+
+                          <a href="javascript:void(0)" class="primary-btn fitplan-price-btn" id="fitplanEnquireBtn">
+                            Enquire Now – 1900 PKR
+                          </a>
+
+                          <div class="fitplan-mini-box">
+                            <i class="fa-solid fa-trophy"></i>
+                            <div>
+                              <h4>Proven Approach</h4>
+                              <p>Science-backed methods for sustainable & long-term results</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
                     </div>
-                    <div class="fs-field">
-                      <label class="fs-label" for="any-specific-concern">Any Specific Concern You Have</label>
-                      <textarea class="fs-textarea" id="any-specific-concern" name="Any Specific Concern You Have"></textarea>
-                    </div>
-                    <div class="fs-button-group">
-                      <button class="fs-button primary-btn" type="submit">Submit</button>
-                    </div>
-                  </form>
-            </section>
-            <!-- Ends here Get Data From User by FORMSPREE -->
+                  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- PROGRAM SECTION / SERVICES SECTION ENDS HERE -->
+            <!-- PROGRAM SECTION / SERVICES SECTION ENDS HERE -->
+
+
+
 
 
 
@@ -943,7 +999,7 @@
 
                   <section class="testimonial-parent-wrapper" id="testimonial-section">
                     <div class="testimonials-section primary-container">
-                     <div class="testi">
+                      <div class="testi">
                         <p class="testimonial-small-heading">Testimonial</p>
                           <h2 class="testimonial-main-title">Journeys of Strength and Stillness</h2>
                           <p class="testimonial-desc">
@@ -951,14 +1007,14 @@
                            while bringing calm to the mind through mindful, grounding practices. 
                            Together, they support a deeper and more meaningful connection with yourself.
                           </p>
-                    </div>
-                      <div class="testimonials-slider">
-  <div class="testimonials-track row-1" id="row1"></div>
-</div>
+                      </div>
+                        <div class="testimonials-slider">
+                            <div class="testimonials-track row-1" id="row1"></div>
+                          </div>
 
-<div class="testimonials-slider">
-  <div class="testimonials-track row-2" id="row2"></div>
-</div>
+                          <div class="testimonials-slider">
+                            <div class="testimonials-track row-2" id="row2"></div>
+                          </div>
                     </div>
                   </section>
 
@@ -969,7 +1025,7 @@
 
                 <!-- Contact Section Starts Here  -->
                 <!-- Contact Section Starts Here -->
-                 <section class="parent-contact-wrapper" id="get-a-quote">
+                 <section class="parent-contact-wrapper" id="enquire-now">
                    <div class="contact-section">
                      <div class="contact-left">
                       <span class="contact-tag">Contact</span>
@@ -982,39 +1038,39 @@
                       </p>
 
                       <div class="contact-info">
-                        <p class="contact-line"><span>📧</span> <a href="mailto:itsfaizimam@gmail.com">itsfaizimam@gmail.com</a></p>
-                        <p class="contact-line"><span>📞</span> <a href="tel:+917294800465">+91 7294800465</a></p>
+                        <p class="contact-line"><span>📧</span> <a href="mailto:khansaatif626@gmail.com">khansaatif626@gmail.com</a></p>
+                        <p class="contact-line"><span>📞</span> <a href="tel:+923001234567">+92 3001234567</a></p>
                       </div>
                     </div>
 
                     <div class="contact-right">
-  <form class="contact-form" id="yogaFormm">
+                      <form class="contact-form" id="yogaFormm">
 
-    <input type="text" id="name" placeholder="Full Name" required />
+                        <input type="text" id="name" placeholder="Full Name" required />
 
-    <input type="tel" id="phone" placeholder="WhatsApp Number" required />
+                        <input type="tel" id="phone" placeholder="WhatsApp Number" required />
 
-    <input type="number" id="weight" placeholder="Current Weight (kg)" required />
+                        <input type="number" id="weight" placeholder="Current Weight (kg)" required />
 
-    <input type="text" id="goal" placeholder="Your Goal (Fat loss / Body shape / Fitness)" required />
+                        <input type="text" id="goal" placeholder="Your Goal (Fat loss / Body shape / Fitness)" required />
 
-    <select id="diet">
-      <option value="">Eating Preference</option>
-      <option value="Vegetarian">Vegetarian</option>
-      <option value="Non-Vegetarian">Non-Vegetarian</option>
-      <option value="Mixed">Mixed</option>
-    </select>
+                        <select id="diet">
+                          <option value="">Eating Preference</option>
+                          <option value="Vegetarian">Vegetarian</option>
+                          <option value="Non-Vegetarian">Non-Vegetarian</option>
+                          <option value="Mixed">Mixed</option>
+                        </select>
 
-    <textarea id="message" placeholder="Any health issues or additional message (optional)"></textarea>
+                        <textarea id="message" placeholder="Any health issues or additional message (optional)"></textarea>
 
-      <button class="primary-btn" type="submit">
-         <i class="fa-brands fa-whatsapp"></i>  Send on WhatsApp 
-      </button>
+                          <button class="primary-btn" type="submit">
+                            <i class="fa-brands fa-whatsapp"></i>  Send on WhatsApp 
+                          </button>
 
-    <p class="contact-note">We will guide you within 24 hours on WhatsApp!</p>
+                        <p class="contact-note">We will guide you within 24 hours on WhatsApp!</p>
 
-  </form>
-</div>
+                      </form>
+                    </div>
                    </div>
                 </section>
 
@@ -1050,7 +1106,7 @@
                           <!-- <a href="#"><img src="./images/icons/twitter.png" alt="X_icon" loading="lazy"></a> -->
                           <a href="https://wa.me/923001234567" target="_blank" aria-label="WhatsApp">
 
-   <img src="./images/icons/whatsapp.png" alt="WhatsApp_icon" loading="lazy"></a>
+                          <img src="./images/icons/whatsapp.png" alt="WhatsApp_icon" loading="lazy"></a>
                         </div>
 
                       </div>

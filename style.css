@@ -759,17 +759,7 @@
   padding: 3rem 0 !important;
 }
 
-/* .courses_small__heading{
-  font-size: 16px;
-    font-weight: 700;
-    border-bottom: 2px solid #df7258;
-    padding-bottom: 4px;
-    display: inline-block;
-    margin-bottom: 10px;
-    color: var(--heading);
-}
 
- */
 /* ===============================
    PROGRAMS SECTION
 ================================ */
@@ -805,118 +795,14 @@
   margin-bottom: 3.5rem;
 }
 
-/* ===============================
-   CARDS GRID
-================================ */
-.programs-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
 
-/* ===============================
-   CARD STYLE
-================================ */
-.program-card {
-  background: #ffffff6e;
-  border: 1px solid #e9e3dd;
-  padding: 2rem;
-  border-radius: 20px;
-  text-align: left;
-  transition: all ease-in-out 0.3s ease;
 
-  /* FIX equal height */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-.program-card:hover {
-  transform: translateY(-6px);
-  border: 1px solid #fb6f4e;
-  transition: all ease-in-out 0.3s ease;
-}
 
-.program-card-title {
-  background: #18284a;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 700;
-}
 
-.program-card-price {
-  font-size: 20px;
-  font-weight: 800;
-  color: #18284a;
-  margin: 14px 0 8px 0;
-}
 
-.program-card-short {
-  color: rgba(46, 46, 46, 0.82);
-  font-size: 15px;
-  line-height: 1.5rem;
-  margin-bottom: 1.2rem;
-}
 
-/* ===============================
-   LISTS
-================================ */
-.program-card-list,
-.duration-list,
-.timing-list,
-.difficulty-list {
-  padding-left: 18px;
-  margin-bottom: 0.7rem;
-}
 
-.program-card-list li,
-.duration-list li,
-.timing-list li,
-.difficulty-list li {
-  margin-bottom: 4px;
-  font-size: 14.5px;
-  color: rgba(46, 46, 46, 0.82);
-}
-
-.difficulty-list,
-.duration-list {
-  list-style: none;
-  padding-left: 2px !important;
-  font-style: italic;
-  font-size: 10px;
-}
-.difficulty-list li,
-.duration-list li {
-  font-size: 14px;
-  /* font-weight: 600; */
-}
-
-/* ===============================
-   TITLES (Benefits, Duration etc.)
-================================ */
-.features_expectation_title,
-.duration_title,
-.difficulty_title {
-  font-weight: 900;
-  letter-spacing: 0.8px;
-  font-size: 14px;
-  opacity: 0.4;
-  color: #18284a;
-  margin-top: 0.7rem;
-}
-
-/* ===============================
-   BUTTON BOTTOM FIX
-================================ */
-
-.program-btn {
-  width: 100%;
-  padding: 0.9rem 0;
-  font-size: 16px;
-  margin-top: auto; /* PUSHES BUTTON TO BOTTOM */
-}
 
 /* ===============================
    RESPONSIVE BREAKPOINTS
@@ -955,93 +841,23 @@
   }
 }
 
-/* Tablet Large: 769px – 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .programs-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
-/* ===============================
-   SWIPER (Infinite Scroll)
-================================ */
 
-.swiper-pagination {
-  position: relative !important;
-  top: 0.4rem !important;
-}
 
-.swiper-pagination-bullet-active {
-  background: #18284a !important;
-}
 
-.swiper-wrapper {
-  gap: 1.5rem !important;
-  align-items: stretch !important;
-}
 
-.swiper-slide {
-  max-width: 350px !important;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-evenly;
-}
 
-.mySwiper .swiper-wrapper {
-  transition-timing-function: linear !important;
-}
 
-.diff_timi {
-  display: flex;
-  justify-content: space-between;
-}
 
-/* Swiper prevents overflow */
-.programs-section,
-.programs-wrapper,
-.swiper {
-  overflow: hidden !important;
-}
 
-/* Swiper Wrapper must be flex */
-.programs-wrapper {
-  display: flex !important;
-  gap: 2rem !important;
-}
 
-/* Swiper Slide */
-.swiper-slide {
-  width: 340px !important;
-  flex-shrink: 0 !important;
-}
 
-.swiper {
-  width: 85% !important;
-  margin: 0 auto !important;
-}
 
-.progrm-father-container {
-  /* backdrop-filter: 1px; */
-  position: relative;
-  z-index: 1;
-}
 
-.progrm-father-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  background-image: url("./images/hero-bg-round-border.svg");
-  /* background-repeat: no-repeat; */
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-size: cover; */
-  background-position: center;
-  opacity: 0.05;
-  z-index: -9999;
-}
 
 /* Program Sections Ends Here  */
+/* Program Sections Ends Here  */
+
 
 /* /* FAQs Sections Starts Here  */
 .faq-section {
@@ -2247,3 +2063,20 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Render Card + Data */
