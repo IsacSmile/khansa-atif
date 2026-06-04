@@ -446,7 +446,9 @@
 
 
 
-/* TESTIMONIALS  */
+/* TESTIMONIALS SECTIONS  */
+/* TESTIMONIALS SECTIONS  */
+
 
 
 .rcr-section {
@@ -469,12 +471,7 @@
   font-weight: 800;
 }
 
-/* .rcr-label::before {
-  content: "";
-  width: 22px;
-  height: 2px;
-  background: var(--accent-from);
-} */
+
 
 .rcr-title {
   font-size: clamp(34px, 5vw, 64px);

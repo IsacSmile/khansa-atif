@@ -94,9 +94,6 @@ lazyVideos.forEach(video => videoObserver.observe(video));
 
 
 
-
-
-
   // Testimonials 
 
 const rcrFeedbackImages = [
