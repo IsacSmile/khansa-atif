@@ -309,7 +309,7 @@ orderForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "https://formspree.io/f/xrednnky",
+            "https://formspree.io/f/xaqzyloo",
             {
                 method: "POST",
                 body: formData,
